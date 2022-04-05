@@ -5,13 +5,12 @@
 	<srcipt src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<body>
-		<a-scene embedded arjs='debugUIEnabled: false;'>
+		<a-scene>
 			<a-entity position="0 0.5 -5"
 				  scale="0.01 0.01 0.01"
 				  rotation="0 90 0"
 				  gltf-model="src: url(models/knight_waving_gesture.gltf);"
 				  animation-mixer="clip: Anim Player"></a-entity>
-			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
 </html>
