@@ -15,7 +15,8 @@
 			<a-entity position="0 2.75 -3"
 				  scale="3 3 3"
 				  text="color: #800000; align: center; value: Templářské tajemné pivo;"></a-entity>
-			<a-gltf-model position="0 0 -3.5"
+			<a-gltf-model id="knight_model"
+				      position="0 0 -3.5"
 				      scale="0.25 0.25 0.25"
 				      src="#knight"
 				      animation-mixer="clip: hello; loop: repeat">
@@ -28,7 +29,7 @@
 			</a-light>
 		</a-scene>
 		<script>
-			let knight_model = document.getElementById('knight');
+			let knight_model = document.getElementById('knight_model');
 			knight_model.addEventListener('animation-finished',function() {
 				console.log("hello")});
 				//knight_model.addAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});});
