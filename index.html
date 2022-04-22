@@ -45,11 +45,11 @@
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
 				var sceneEl = document.querySelector('a-scene');
 				var newEnt = document.createElement('a-entity');
-				newEnt.setAttribute('position', "1.75 2 -3");
+				newEnt.setAttribute('position', "1.75 2 -3.5");
 				newEnt.setAttribute("position", "0 0 325");
 				newEnt.setAttribute('text-geometry', {font: "#optimerRegular", size: 0.2, height: 0.1, bevelEnabled: true, bevelSize: 0.02, bevelThickness: 0.02, value: "DANCE"});
 				newEnt.setAttribute("material", {color: "#903091"});
-				newEnt.setAttribute("animation", {property: "position", to: "1.75 2 -1.5", delay: 750, dur: 100, easing: "linear", loop: true});
+				newEnt.setAttribute("animation", {property: "position", to: "1.75 2 -2.5", delay: 1000, dur: 2500, direction: "alternate", easing: "linear", loop: true});
 				sceneEl.appendChild(newEnt);
 			});
 		</script>
