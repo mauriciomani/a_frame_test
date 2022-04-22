@@ -5,6 +5,7 @@
 		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 		<script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 		<script src="js/aframe-text-geometry-component.min.js"></script>
+		<meta charset="utf-8">
 	</head>
 	<body>
 		<a-scene background="color: #ECECEC">
@@ -18,12 +19,13 @@
 			</a-assets>
 			<a-entity position="0 2.75 -3"
 				  text-geometry="font: #optimerRegular;  
-				  size: 0.5; 
-				  height: 0.1;
+				  size: 0.1; 
+				  height: 0.05;
 				  bevelEnabled: true;
 				  bevelSize: 0.02;
 				  bevelThickness: 0.02;
-				  value: Templářské tajemné pivo"></a-entity>
+				  value: Templářské tajemné pivo"
+				  material="color: #AAAAFF"></a-entity>
 			
 			<a-gltf-model id="knight_model"
 				      position="0 0 -3.5"
