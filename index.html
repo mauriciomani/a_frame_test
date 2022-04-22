@@ -43,7 +43,7 @@
 			let knight_model = document.getElementById('knight_model');
 			knight_model.addEventListener('animation-finished',function() {
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
-				<a-entity position="1 1.5 -3"
+				const dance = `<a-entity position="1 1.5 -3"
 				  text-geometry="font: #optimerRegular;  
 				  size: 0.2; 
 				  height: 0.1;
@@ -51,7 +51,8 @@
 				  bevelSize: 0.02;
 				  bevelThickness: 0.02;
 				  value: DANCE"
-				  material="color: #903091"></a-entity> });
+				  material="color: #903091"></a-entity>`
+				document.body.innerHTML += dance });
 		</script>
 	</body>
 </html>
