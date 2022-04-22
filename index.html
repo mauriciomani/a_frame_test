@@ -52,7 +52,8 @@
 				  bevelThickness: 0.02;
 				  value: DANCE"
 				  material="color: #903091"></a-entity>`;
-				document.getElementsByTagName("a-scene").write(dance) });
+				var aScene = document.querySelector("a-scene");
+				aScene.innerHTML += dance });
 		</script>
 	</body>
 </html>
