@@ -5,7 +5,8 @@
 		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 		<script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 		<script src="js/aframe-text-geometry-component.min.js"></script>
-		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+		<!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
 	</head>
 	<body>
 		<!-- No longer need background="color: #ECECEC" -->
@@ -18,36 +19,37 @@
 					      src="models/helvetiker_regular.typeface.json">
 				</a-asset-item>
 			</a-assets>
-			<a-nft type="nft"
+			<!-- <a-nft type="nft"
 			       url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/mauriciomani/a_frame_test/main/models/tracker/templarske_img"
 			       smooth="true"
 			       smoothCount="10"
 			       smoothTolerance=".01"
 			       smoothThreshold="5">
-				<a-entity position="-0.45 1.85 -3"
-				  	  text-geometry="font: #optimerRegular;  
-				  	  size: 0.05; 
-				  	  height: 0.025;
-				  	  bevelEnabled: true;
-				  	  bevelSize: 0.01;
-				  	  bevelThickness: 0.02;
-				  	  value: Templarske tajemne pivo"
-				  	  material="color: #800000"></a-entity>
+			<a-entity position="-0.45 1.85 -3"
+				  text-geometry="font: #optimerRegular;  
+				  size: 0.05; 
+				  height: 0.025;
+				  bevelEnabled: true;
+				  bevelSize: 0.01;
+				  bevelThickness: 0.02;
+				  value: Templarske tajemne pivo"
+				  material="color: #800000"></a-entity> -->
 			
-				<a-gltf-model id="knight_model"
-					      position="0 0.7 -3.5"
-					      scale="0.1 0.1 0.1"
-					      src="#knight"
-					      animation-mixer="clip: hello; loop: once">
-				</a-gltf-model>
-				<a-light id="directionalLight"
-					 type="directional"
-					 color="#FFF"
-					 intensity="3.5"
-					 position="0.3 2.2 1.2">
-				</a-light>
-			</a-nft>
-			<a-entity camera></a-entity>
+			<a-gltf-model id="knight_model"
+				      position="0 0.7 -3.5"
+				      scale="0.1 0.1 0.1"
+				      src="#knight"
+				      animation-mixer="clip: hello; loop: once">
+			</a-gltf-model>
+			<a-light id="directionalLight"
+				 type="directional"
+				 color="#FFF"
+				 intensity="3.5"
+				 position="0.3 2.2 1.2">
+			</a-light>
+			<!-- </a-nft>
+			<a-entity camera></a-entity> -->
+		<a-marker-camera preset='hiro'></a-marker-camera>
 		</a-scene>
 		<!-- <script>
 			let knight_model = document.getElementById('knight_model');
