@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<!-- No longer need background="color: #ECECEC" -->
-		<a-scene embedded arjs>
+		<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 			<a-assets>
 				<a-asset-item id="knight"
 					      src="models/knight.gltf">
@@ -25,8 +25,7 @@
 			       smoothCount="10"
 			       smoothTolerance=".01"
 			       smoothThreshold="5"> -->
-  			<a-marker-camera preset='hiro'>
- 				<a-entity position="-0.45 1.85 -3"
+ 			<a-entity position="-0.45 1.85 -3"
 				  	  text-geometry="font: #optimerRegular;  
 				  	  size: 0.05; 
 				  	  height: 0.025;
@@ -36,21 +35,21 @@
 				  	  value: Templarske tajemne pivo"
 				  	  material="color: #800000"></a-entity>
 			
-				<a-gltf-model id="knight_model"
+			<a-gltf-model id="knight_model"
 					      position="0 0.7 -3.5"
 					      scale="0.1 0.1 0.1"
 					      src="#knight"
 					      animation-mixer="clip: hello; loop: once">
-				</a-gltf-model>
-				<a-light id="directionalLight"
+			</a-gltf-model>
+			<a-light id="directionalLight"
 				 	 type="directional"
 				 	 color="#FFF"
 				 	 intensity="3.5"
 				 	 position="0.3 2.2 1.2">
-				</a-light>
+			</a-light>
 			<!-- </a-nft>
 			<a-entity camera></a-entity> -->
-			</a-marker-camera>
+			<a-marker-camera preset='hiro'></a-marker-camera>
 		</a-scene>
 		<!-- <script>
 			let knight_model = document.getElementById('knight_model');
