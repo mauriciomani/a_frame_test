@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<!-- No longer need background="color: #ECECEC" -->
-		<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+		<a-scene embedded arjs>
 			<a-assets>
 				<a-asset-item id="knight"
 					      src="models/knight.gltf">
@@ -25,10 +25,9 @@
 			       smoothCount="10"
 			       smoothTolerance=".01"
 			       smoothThreshold="5"> -->
-			<a-marker preset='hiro'>
+			<a-marker-camera preset='hiro'>
 				<a-box position="0 0.5 0" material="color: green;"></a-box>
- 			</a-marker>
-			<a-entity camera></a-entity>
+ 			</a-marker-camera>
 				<!-- <a-entity position="-0.45 1.85 -3"
 				  	  text-geometry="font: #optimerRegular;  
 				  	  size: 0.05; 
