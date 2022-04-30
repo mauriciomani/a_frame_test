@@ -26,7 +26,7 @@
 			       smoothTolerance=".01"
 			       smoothThreshold="5"> -->
 			<a-marker preset='hiro'>
-				<a-entity position="-1 2 0"
+				<a-entity position="-1 4 0"
 					  rotation="270 180 180"
 				  	  text-geometry="font: #optimerRegular;  
 				  	  size: 0.15; 
@@ -38,10 +38,11 @@
 				  	  material="color: #800000"></a-entity>
 				
 				<a-gltf-model id="knight_model"
-					      position="0 0.5 0"
-					      scale="0.1 0.1 0.1"
+					      rotation="0 180 0"
+					      position="0 -1 0"
+					      scale="0.3 0.3 0.3"
 					      src="#knight"
-					      animation-mixer="clip: hello; loop: once">
+					      animation-mixer="clip: hello; loop: repeat">
 				</a-gltf-model>
 				
  			</a-marker>
