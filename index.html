@@ -26,7 +26,7 @@
 			       smoothTolerance=".01"
 			       smoothThreshold="5"> -->
 			<a-marker preset='hiro'>
-				<a-entity position="-1 0.5 4"
+				<a-entity position="-1 0.5 -3"
 					  rotation="270 180 180"
 				  	  text-geometry="font: #optimerRegular;  
 				  	  size: 0.15; 
@@ -36,24 +36,22 @@
 				          bevelThickness: 0.03;
 				  	  value: Templarske tajemne pivo"
 				  	  material="color: #800000"></a-entity>
-				
 				<a-gltf-model id="knight_model"
 					      rotation="0 0 180"
-					      position="0 0.5 -2"
+					      position="0 0.5 1"
 					      scale="0.3 0.3 0.3"
 					      src="#knight"
 					      animation-mixer="clip: hello; loop: repeat">
 				</a-gltf-model>
-				
- 			</a-marker>
-			<a-entity camera></a-entity> 
-				<!--
 				<a-light id="directionalLight"
 				 	 type="directional"
 				 	 color="#FFF"
 				 	 intensity="3.5"
 				 	 position="0.3 2.2 1.2">
 				</a-light>
+ 			</a-marker>
+			<a-entity camera></a-entity> 
+				<!--
 			</a-nft>
 			<a-entity camera></a-entity> 
 			</a-marker-camera>
