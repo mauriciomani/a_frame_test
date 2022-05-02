@@ -25,7 +25,8 @@
 			       smoothCount="10"
 			       smoothTolerance=".01"
 			       smoothThreshold="5"> -->
-			<a-marker preset='hiro'>
+			<a-marker preset='hiro'
+				  id='hiro_marker'>
 				<a-entity position="-1 0.5 -1"
 					  rotation="270 180 180"
 				  	  text-geometry="font: #optimerRegular;  
@@ -40,8 +41,7 @@
 					      rotation="270 0 0"
 					      position="0 0.5 2.5"
 					      scale="0.3 0.3 0.3"
-					      src="#knight"
-					      animation-mixer="clip: hello; loop: once">
+					      src="#knight">
 				</a-gltf-model>
 				<a-light id="directionalLight"
 				 	 type="directional"
@@ -59,6 +59,9 @@
 		</a-scene>
 		<script>
 			let knight_model = document.getElementById('knight_model');
+			let hiro_marker = document.getElementById('hiro_marker');
+			hiro_marker.addEventListener('markerFound', function(){
+				knight_model.setAttribute('animation-mixer',{clip: "hello",loop: "once"})});
 			knight_model.addEventListener('animation-finished',function() {
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
 				var sceneEl = document.querySelector('a-scene');
