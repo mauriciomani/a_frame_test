@@ -41,7 +41,7 @@
 					      position="0 0.5 2.5"
 					      scale="0.3 0.3 0.3"
 					      src="#knight"
-					      animation-mixer="clip: hello; loop: repeat">
+					      animation-mixer="clip: hello; loop: once">
 				</a-gltf-model>
 				<a-light id="directionalLight"
 				 	 type="directional"
@@ -57,19 +57,19 @@
 			</a-marker-camera>
 			<a-entity camera></a-entity> -->
 		</a-scene>
-		<!-- <script>
+		<script>
 			let knight_model = document.getElementById('knight_model');
 			knight_model.addEventListener('animation-finished',function() {
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
 				var sceneEl = document.querySelector('a-scene');
 				var newEnt = document.createElement('a-entity');
-				newEnt.setAttribute('position', "0.25 1.6 -3.5");
+				newEnt.setAttribute('position', "0.5 0.5 -1.5");
 				newEnt.setAttribute("rotation", "0 0 325");
 				newEnt.setAttribute('text-geometry', {font: "#optimerRegular", size: 0.085, height: 0.05, bevelEnabled: true, bevelSize: 0.01, bevelThickness: 0.08, value: "DANCE"});
 				newEnt.setAttribute("material", {color: "#903091"});
 				newEnt.setAttribute("animation", {property: "position", from: "0.25 1.6 -3.5", to: "0.25 1.6 -2.5", delay: 500, dur: 500, direction: "alternate", easing: "linear", loop: true});
 				sceneEl.appendChild(newEnt);
 			});
-		</script> -->
+		</script>
 	</body>
 </html>
