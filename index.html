@@ -46,8 +46,8 @@
 				<a-light id="directionalLight"
 				 	 type="directional"
 				 	 color="#FFFFFF"
-				 	 intensity="25"
-					 position="0 7 0">
+				 	 intensity="12"
+					 position="0 12 0">
 				</a-light>
  			</a-marker>
 			<a-entity camera></a-entity> 
@@ -74,10 +74,10 @@
 				var markerEl = sceneEl.querySelector('a-marker');
 				var newEnt = document.createElement('a-entity');
 				newEnt.setAttribute('position', "2 0.5 0");
-				newEnt.setAttribute("rotation", "270 180 195");
-				newEnt.setAttribute('text-geometry', {font: "#optimerRegular", size: 0.2, height: 0.1, bevelEnabled: true, bevelSize: 0.01, bevelThickness: 0.08, value: "DANCE"});
+				newEnt.setAttribute("rotation", "270 180 345");
+				newEnt.setAttribute('text-geometry', {font: "#optimerRegular", size: 0.3, height: 0.15, bevelEnabled: true, bevelSize: 0.01, bevelThickness: 0.08, value: "DANCE"});
 				newEnt.setAttribute("material", {color: "#903091"});
-				newEnt.setAttribute("animation", {property: "position", from: "1 0.5 0", to: "1 1.5 0", delay: 500, dur: 500, direction: "alternate", easing: "linear", loop: true});
+				newEnt.setAttribute("animation", {property: "position", from: "1 0.5 0", to: "1 2 0", delay: 500, dur: 500, direction: "alternate", easing: "linear", loop: true});
 				markerEl.appendChild(newEnt);
 			});
 		</script>
