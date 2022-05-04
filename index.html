@@ -46,8 +46,8 @@
 				<a-light id="directionalLight"
 				 	 type="directional"
 				 	 color="#FFFFFF"
-				 	 intensity="5"
-					 position="0 2 0">
+				 	 intensity="7"
+					 position="0 7 0">
 				</a-light>
  			</a-marker>
 			<a-entity camera></a-entity> 
@@ -56,7 +56,7 @@
 				 	 type="directional"
 				 	 color="#FFFFFF"
 				 	 intensity="3.5"
-				 	 position="0 2 0">
+				 	 position="0 7 0">
 				</a-light>
 			</a-nft>
 			<a-entity camera></a-entity> 
@@ -74,8 +74,8 @@
 				var markerEl = sceneEl.querySelector('a-marker');
 				var newEnt = document.createElement('a-entity');
 				newEnt.setAttribute('position', "0 0.5 0");
-				newEnt.setAttribute("rotation", "0 0 325");
-				newEnt.setAttribute('text-geometry', {font: "#optimerRegular", size: 1, height: 0.5, bevelEnabled: true, bevelSize: 0.01, bevelThickness: 0.08, value: "DANCE"});
+				newEnt.setAttribute("rotation", "270 180 325");
+				newEnt.setAttribute('text-geometry', {font: "#optimerRegular", size: 0.1, height: 0.05, bevelEnabled: true, bevelSize: 0.01, bevelThickness: 0.08, value: "DANCE"});
 				console.log(markerEl);
 				newEnt.setAttribute("material", {color: "#903091"});
 				//newEnt.setAttribute("animation", {property: "position", from: "0 0.5 0", to: "0 1 0", delay: 500, dur: 500, direction: "alternate", easing: "linear", loop: true});
