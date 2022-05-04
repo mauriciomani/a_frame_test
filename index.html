@@ -15,6 +15,9 @@
 				<a-asset-item id="knight"
 					      src="models/knight.gltf">
 				</a-asset-item>
+				<a-asset-item id="hip_dont_lie"
+					      src="models/medieval_hips_dont_lie.mp3">
+				</a-asset-item>
 				<a-asset-item id="optimerRegular" 
 					      src="models/helvetiker_regular.typeface.json">
 				</a-asset-item>
@@ -49,6 +52,13 @@
 				 	 intensity="7"
 					 position="0 12 0">
 				</a-light>
+				<a-sound id="medieval_song"
+					 src="#hip_dont_lie" 
+					 autoplay="false" 
+					 loop="true"
+					 on="false"
+					 position="0 7 0">
+				</a-sound>
  			</a-marker>
 			<a-entity camera></a-entity> 
 				<!--
@@ -66,9 +76,11 @@
 		<script>
 			let knight_model = document.getElementById('knight_model');
 			let hiro_marker = document.getElementById('hiro_marker');
+			let sound_hip_dont_lie = document.getElementById('medieval_song');
 			hiro_marker.addEventListener('markerFound', function(){
 				knight_model.setAttribute('animation-mixer',{clip: "hello",loop: "once"})});
 			knight_model.addEventListener('animation-finished',function() {
+				sound_hip_dont_lie.setAttribute('on', 'true');
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
 				var sceneEl = document.querySelector('a-scene');
 				var markerEl = sceneEl.querySelector('a-marker');
