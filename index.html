@@ -55,7 +55,7 @@
 					 src="#hip_dont_lie" 
 					 autoplay="false" 
 					 loop="true"
-					 on="false"
+					 on="true"
 					 position="0 7 0"
 					 volume=10>
 				</a-sound>
@@ -77,11 +77,10 @@
 			let knight_model = document.getElementById('knight_model');
 			let hiro_marker = document.getElementById('hiro_marker');
 			let sound_hip_dont_lie = document.getElementById('medieval_song');
-			console.log(sound_hip_dont_lie);
 			hiro_marker.addEventListener('markerFound', function(){
 				knight_model.setAttribute('animation-mixer',{clip: "hello",loop: "once"})});
 			knight_model.addEventListener('animation-finished',function() {
-				sound_hip_dont_lie.setAttribute('on', 'true');
+				//sound_hip_dont_lie.setAttribute('on', 'true');
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
 				var sceneEl = document.querySelector('a-scene');
 				var markerEl = sceneEl.querySelector('a-marker');
