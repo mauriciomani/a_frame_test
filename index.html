@@ -53,7 +53,7 @@
 				</a-light>
 				<a-sound id="medieval_song"
 					 src="#hip_dont_lie" 
-					 autoplay="false" 
+					 autoplay="true" 
 					 loop="true"
 					 position="0 7 0"
 					 volume=10>
@@ -79,7 +79,7 @@
 			hiro_marker.addEventListener('markerFound', function(){
 				knight_model.setAttribute('animation-mixer',{clip: "hello",loop: "once"})});
 			knight_model.addEventListener('animation-finished',function() {
-				audio.play();
+				//audio.play();
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
 				var sceneEl = document.querySelector('a-scene');
 				var markerEl = sceneEl.querySelector('a-marker');
