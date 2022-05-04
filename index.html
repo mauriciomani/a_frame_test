@@ -47,7 +47,7 @@
 				 	 type="directional"
 				 	 color="#FFFFFF"
 				 	 intensity="5"
-					 position="0 6 0">
+					 position="0 5 0">
 				</a-light>
  			</a-marker>
 			<a-entity camera></a-entity> 
@@ -72,7 +72,7 @@
 				knight_model.setAttribute('animation-mixer',{clip: "dancing",loop: "repeat"});
 				var sceneEl = document.querySelector('a-scene');
 				var newEnt = document.createElement('a-entity');
-				newEnt.setAttribute('position', "0 0.5 0");
+				newEnt.setAttribute('position', "0 1 0");
 				newEnt.setAttribute("rotation", "0 0 325");
 				newEnt.setAttribute('text-geometry', {font: "#optimerRegular", size: 0.2, height: 0.1, bevelEnabled: true, bevelSize: 0.01, bevelThickness: 0.08, value: "DANCE"});
 				newEnt.setAttribute("material", {color: "#903091"});
