@@ -57,7 +57,8 @@
 					 autoplay="false" 
 					 loop="true"
 					 on="false"
-					 position="0 7 0">
+					 position="0 7 0"
+					 volume=10>
 				</a-sound>
  			</a-marker>
 			<a-entity camera></a-entity> 
@@ -77,6 +78,7 @@
 			let knight_model = document.getElementById('knight_model');
 			let hiro_marker = document.getElementById('hiro_marker');
 			let sound_hip_dont_lie = document.getElementById('medieval_song');
+			console.log(sound_hip_dont_lie);
 			hiro_marker.addEventListener('markerFound', function(){
 				knight_model.setAttribute('animation-mixer',{clip: "hello",loop: "once"})});
 			knight_model.addEventListener('animation-finished',function() {
