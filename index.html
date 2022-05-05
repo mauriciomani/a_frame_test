@@ -73,7 +73,7 @@
 		<script>
 			let knight_model = document.getElementById('knight_model');
 			let hiro_marker = document.getElementById('hiro_marker');
-			//let audio = document.getElementById('medieval_song');
+			let audio = document.getElementById('medieval_song');
 			hiro_marker.addEventListener('markerFound', function(){
 				knight_model.setAttribute('animation-mixer',{clip: "hello",loop: "once"})});
 			knight_model.addEventListener('animation-finished',function() {
