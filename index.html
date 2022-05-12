@@ -81,7 +81,7 @@
 			let audio = document.getElementById('medieval_song');
 			document.onclick = function () {
   				console.log('Click just happened');
-				audio.play();}
+				audio.components.sound.playSound();}
 			hiro_marker.addEventListener('markerFound', function(){
 				knight_model.setAttribute('animation-mixer',{clip: "hello",loop: "once"})});
 			knight_model.addEventListener('animation-finished',function() {
